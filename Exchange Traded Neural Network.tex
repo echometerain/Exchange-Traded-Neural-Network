@@ -4,15 +4,17 @@
 \usepackage{hyperref}
 \usepackage[latin1]{inputenc}
 \usepackage{nopageno}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
+\usepackage[
+    type={CC},
+    modifier={by},
+    version={4.0},
+]{doclicense}
 \pdfpageheight=11in
 \pdfpagewidth=8.5in
 
 \title{Exchange-Traded Neural Network}
 \author{Echometer Rain}
-\date{03/12/2024}
-\cfoot{This work is licensed under a "CC BY 4.0" license.}
+\date{03/15/2024}
 
 \begin{document}
 \maketitle
@@ -41,6 +43,8 @@ We have not yet implemented the bias term needed to satisfy the Universal Approx
 
 This brings us to the backpropagation step. To tune the weights of a traditional neural network, a differentiable loss function in order required to measure the amount that each weight of each node contributes to the quality of the final result. In our case, the loss function will just be the net profit of the network, which will equal the net profit of the output layer minus the sum of all the bias weights and the sum of all transaction fees. At the end of each epoch (the time of which depends on the length of the longest contract), the weights can be adjusted to maximize profit, and the network shall run again.
 \section{Conclusion}
-Not only is this architecture incredibly expensive to train, the Security and Exchange Commission (SEC) will never allow some startup to create $\sim$7000 ETFs out of thin air (without bribes). Because we may not be able to control whether or not an LLM will overfit past stock market data, we predict that our architecture will surpass the investment capabilities of near-future GPTs. We hereby request eight (8) trillion dollar.
+Not only is this architecture incredibly expensive to train, the Security and Exchange Commission (SEC) will never allow some startup to create $\sim$7000 ETFs out of thin air (without bribes). Because we may not be able to control whether or not an LLM will overfit past stock market data, we predict that our architecture will surpass the investment capabilities of near-future GPTs. We hereby request eight (8) trillion dollar.\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+
+\doclicenseThis
 
 \end{document}
